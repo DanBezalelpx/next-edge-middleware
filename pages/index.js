@@ -11,35 +11,14 @@ export default function Home({ country }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Next.js Geolocation in Edge Functions</title>
+        <title>Guy</title>
         <meta
           name="description"
-          content="A simple starter template demonstrating Geolocation in Edge Functions"
+          content="Hello Guy"
         />
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>Next.js Geolocation in Edge Functions</h1>
-        <p className={styles.description}>
-          {country && country !== 'undefined' ? (
-            <>
-              <span className={styles.flag}>
-                <Image
-                  alt={`${country} flag`}
-                  src={`https://flagcdn.com/96x72/${country.toLowerCase()}.png`}
-                  width={32}
-                  height={24}
-                />
-              </span>
-              <span className={styles.welcome}>
-                Welcome from {countries.find((c) => c.code === country).name}
-              </span>
-            </>
-          ) : (
-            `We're unable to find you!`
-          )}
-        </p>
-      </main>
+      <h1>Hello Guy</h1>
     </div>
   )
 }
+
